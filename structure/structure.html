@@ -1,0 +1,19 @@
+<h3>{{vm.title}}</h3>
+<hr />
+
+<h4>ES2015 Classes</h4>
+
+<p>The objective of this application was to change a circa 2014 styled AngularJS application and update it with some newer syntax. With the introduction of the newest browsers, ES2015 classes are easily used without the need for Babel or other transpiler tooling. With that in mind, we were able to remove the inline function and parameter requirements and fully replace it with a simple class.</p>
+<p>In addition, we've taken the controller as syntax and alised $scope with VM in the routing section of the app.js file. With this, we're able to avoid using $scope in the controller and are able to use both `this` for properties and non defined functions in the class, just as you would expect an ES2015 class to work.</p>
+
+  <p>The reason we have the angular.module last inside out controller files is becaue ES2015 Classes are not hoisted so if the are referenced before we define them we get a reference error.</p>
+
+<h4>Using IFFE's</h4>
+<p> You'll notice that this class and angular module are wrapped with an 
+ Immediately-Invoked Function Expression, or IIFE for short. Technically,
+ you probably don't need an IFFE around this code but since we're still using
+ AngularJS and it is possible for code to accessible across the application 
+ it's probably not a bad practice. If you move onto Angular 2+, this practice
+ is no longer needed since you will be working with ES6 module loading etc. 
+ which should prevent code leakage. </p>
+

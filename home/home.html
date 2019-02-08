@@ -1,0 +1,24 @@
+<h3>{{vm.name}}</h3>
+<hr />
+<h4>Use this application to kick start your AngularJS development.</h4>
+
+<hr />
+<button type="button" class="btn btn-default" ng-click="isCollapsed = !isCollapsed">
+		<i class="fa " ng-class="isCollapsed ? 'fa-toggle-off' : 'fa-toggle-on'"  aria-hidden="true"></i>
+	&nbsp; Toggle collapse Vertically</button>
+<hr>
+<div uib-collapse="isCollapsed">
+	<div class="well well-lg">Demonstrating that Angular UI and Animation are working</div>
+</div>
+
+<hr/>
+
+<button type="button" class="btn btn-default" ng-click="vm.showServiceResult()">
+		Show Service Return
+</button>
+
+<span ng-show="vm.processing" class="text-muted">
+	<i class="fa fa-spinner fa-spin" ></i> <span>Ajax Call Processing ...</span>
+</span>
+
+ <span ng-show="vm.isReady" class="text-success">{{vm.serviceReturn}}</span>
