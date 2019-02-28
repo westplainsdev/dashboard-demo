@@ -1,3 +1,3 @@
 # dashboard-demo
 
-This a live version hosted through github of an angularJS dashboard.
+This a live version of the angularJS quick-start-dashboard. 
