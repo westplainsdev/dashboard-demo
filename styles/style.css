@@ -36,7 +36,7 @@ h1.page-header {
   left: 0;
   right: 0;
   z-index: 20;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 /* Flip around the padding for proper display in narrow viewports */
